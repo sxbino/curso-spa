@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap');
-
+* {
+  box-sizing: border-box;
+}
 body {
   margin: 0;
   padding: 0;
@@ -8,10 +10,14 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
-.header-main {
+.header {
+  max-height: 80px;
+  margin-bottom: 25px;
+  padding: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  box-shadow: 0px 10px 22px 0px rgba(51,51,51,0.1);
 }
 
 .header a {
@@ -21,13 +27,13 @@ body {
 
 .main {
   padding: 10px;
-  grid-template-columns: minmax(auto, 976px);
+  grid-template-columns: minmax(auto, 1280px);
   display: grid;
   justify-content: center;
 }
 
 .characters {
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   grid-gap: 1.5rem;
   grid-row-gap: 1.5em;
   display: grid;

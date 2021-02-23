@@ -1,5 +1,3 @@
-import { defaultCipherList } from "constants";
-
 const Error404 = () => {
   const view = `
     <div class="error404">
